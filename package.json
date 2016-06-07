@@ -1,0 +1,31 @@
+{
+  "name": "dexbot",
+  "version": "0.1.0",
+  "description": "A bot for my raspberry pi",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "botkit": "0.2.0",
+    "transmission": "0.4.5",
+    "webtorrent": "0.94.3"
+  },
+  "devDependencies": {
+    "debug": "2.2.0",
+    "transmission": "0.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node index.js",
+    "start-dev": "NODE_ENV=development DEBUG=* node index.js"
+  },
+  "keywords": [
+    "bot",
+    "raspberry",
+    "pi",
+    "slack"
+  ],
+  "author": "Nikhil Warke",
+  "license": "MIT"
+}
