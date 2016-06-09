@@ -30,7 +30,9 @@ controller.hears(['progress'], 'direct_message,direct_mention,mention', function
     }
     convo.ask('Please tell me the id of torrent', function (response, convo) {
       convo.say('Here you go')
-      // get torrent details from infoHash and send it to user
+      // get torrent details from id and send it to user
+      var id = response.text
+      var details = client.getTorrentDetails(id)
       convo.say(details)
 
       convo.next()
